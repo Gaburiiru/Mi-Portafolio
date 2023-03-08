@@ -55,3 +55,15 @@ img:hover{
     filter:blur(2px);
     
 }
+
+h1{
+    text-shadow: 1px 1px #000
+}
+
+h5{
+    text-shadow: 1px 1px #000
+}
+
+p{
+    text-shadow: 1px 1px #000
+}
