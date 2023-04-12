@@ -29,16 +29,20 @@ img{
         width: 100%;
         margin: 0px auto;
     }
+    #titulo{
+        color:white;
+        padding-top: 4vh;
+        font-size: 2vh;
+    }
 }
 a{
     text-decoration: none;
 }
 
-header{
+.header{
     background-color: #000000;
-    /* filter:invert(20); */
     width: auto;
-    height: 5vh;
+    height: auto;
 }
 
 .b{
