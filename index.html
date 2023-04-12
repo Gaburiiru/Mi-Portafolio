@@ -1,93 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paginas con JS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
-<body>
+  <body>
     <header>
-      <a href="https://github.com/Gaburiiru" class=""><b class="b">Github</b></a>
-      <a href="https://www.linkedin.com/in/gabriel-ricardes-578902214/" class=""><b b class="b">LinkedIn</b></a>
+      <a href="https://github.com/Gaburiiru" class=""
+        ><b class="b">Github</b></a
+      >
+      <a href="https://www.linkedin.com/in/gabriel-ricardes-578902214/" class=""
+        ><b b class="b">LinkedIn</b></a
+      >
     </header>
-    <h1 class="text-center mt-3" id="titulo">Proyectos con <b id="s">JavaScript</b></h1>
-    <div id="carouselExampleCaptions" class="carousel slide mt-3 shadow-lg">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="https://crud-js-local.netlify.app/">
-              <img src="img/cargarEmpleados.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Listar empleados (CRUD)</h5>
-                <p>Ingresas nombre y puesto de trabajo del empleado, el mismo se puede modificar y eliminar.</p>
-              </div>
-            </a>  
-          </div>
-          <div class="carousel-item">
-            <a href="https://carrito-de-fruta.netlify.app/">
-              <img src="img/carritoDeFruta.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Carrito de frutas (CRUD)</h5>
-                <p>Seleccionas la fruta que queres y se te guarda a tu carrito modificando la cantidad y actualizando el coste total.</p>
-              </div>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://selector-de-color.netlify.app/">
-              <img src="img/colorPiker.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Selector de color</h5>
-                <p>Selecionas el color que queres y te lo genera a formato hexadecimal, además de que se te guarda al portapapaeles.</p>
-              </div>  
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://api-fetch-rick-and-morty.netlify.app/">
-              <img src="img/RickAndMorty.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>API Rick And Morty</h5>
-                <p>Extrae de la api de rick and morty el json, para visualizar los personajes en tarjetas.</p>
-              </div>  
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://alta-alumnos-profesor.netlify.app/">
-              <img src="img/alta-profesores-alumnos.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Alta alumnos y profesor</h5>
-                <p>Se puede agregar alumnos y profesores para modificar su estado de aprobacion.</p>
-              </div>  
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://agregar-tareas-local-storage.netlify.app/">
-              <img src="img/agregar-tareas.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Agregar tareas</h5>
-                <p>Se puede agregar tareas y eliminarlas, esta hecho con LocalStorage por lo que se puede actualizar la pagina y no perdes informacion.</p>
-              </div>  
-            </a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <h1 class="text-center mt-3" id="titulo">
+      Proyectos con <b id="s">JavaScript</b>
+    </h1>
+    <div id="carousel1" class="carousel slide mt-3 shadow-lg">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://crud-js-local.netlify.app/">
+            <img
+              src="img/cargarEmpleados.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Listar empleados (CRUD)</h5>
+              <p>
+                Ingresas nombre y puesto de trabajo del empleado, el mismo se
+                puede modificar y eliminar.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://carrito-de-fruta.netlify.app/">
+            <img src="img/carritoDeFruta.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Carrito de frutas (CRUD)</h5>
+              <p>
+                Seleccionas la fruta que queres y se te guarda a tu carrito
+                modificando la cantidad y actualizando el coste total.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://selector-de-color.netlify.app/">
+            <img src="img/colorPiker.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Selector de color</h5>
+              <p>
+                Selecionas el color que queres y te lo genera a formato
+                hexadecimal, además de que se te guarda al portapapaeles.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://api-fetch-rick-and-morty.netlify.app/">
+            <img src="img/RickAndMorty.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>API Rick And Morty</h5>
+              <p>
+                Extrae de la api de rick and morty el json, para visualizar los
+                personajes en tarjetas.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://alta-alumnos-profesor.netlify.app/">
+            <img
+              src="img/alta-profesores-alumnos.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alta alumnos y profesor</h5>
+              <p>
+                Se puede agregar alumnos y profesores para modificar su estado
+                de aprobacion.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://agregar-tareas-local-storage.netlify.app/">
+            <img src="img/agregar-tareas.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Agregar tareas</h5>
+              <p>
+                Se puede agregar tareas y eliminarlas, esta hecho con
+                LocalStorage por lo que se puede actualizar la pagina y no
+                perdes informacion.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel1"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel1"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="text-center mt-3" id="titulo">
+      Proyectos con <b id="s">JavaScript</b> y <b id="r">REACT</b>
+    </h1>
+    <div id="carousel2" class="carousel slide mt-3 shadow-lg">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel2"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel2"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://agregar-tareas-con-react.netlify.app/">
+            <img
+              src="img/agregar-tareas-com-react.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <!-- <img src="img/icono-react.png" class="react"> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Agregar tareas con REACT</h5>
+              <p>
+                Ingresas nombre de la tarea y la descripcion de está, el mismo
+                se puede eliminar.
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="carousel-item">
+          <a href="https://agregar-tareas-local-storage.netlify.app/">
+            <img src="img/agregar-tareas.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Agregar tareas</h5>
+              <p>
+                Se puede agregar tareas y eliminarlas, esta hecho con
+                LocalStorage por lo que se puede actualizar la pagina y no
+                perdes informacion.
+              </p>
+            </div>
+          </a>
+        </div> -->
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel2"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel2"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

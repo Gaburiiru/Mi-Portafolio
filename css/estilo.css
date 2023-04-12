@@ -8,12 +8,28 @@ img{
     border-radius: 15px;
 }
 
-#carouselExampleCaptions{
+#carousel1{
     display: flex;
     width: 80%;
     margin: 0px auto;
 }
-
+#carousel2{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+}
+@media (max-width: 600px) {
+    #carousel1{
+        display: flex;
+        width: 100%;
+        margin: 0px auto;
+    }
+    #carousel2{
+        display: flex;
+        width: 100%;
+        margin: 0px auto;
+    }
+}
 a{
     text-decoration: none;
 }
@@ -38,6 +54,7 @@ header{
 
 #titulo{
     color:white;
+    padding-top: 4vh;
 }
 #s{
     background-color: yellow;
@@ -49,6 +66,18 @@ header{
     margin: 5px;
 }
 #s:hover{
+    opacity:unset;
+}
+#r{
+    background-color: rgb(13, 13, 13);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:rgb(0, 191, 255);
+    opacity: 0.5;
+    margin: 5px;
+}
+#r:hover{
     opacity:unset;
 }
 img:hover{
