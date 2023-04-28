@@ -98,9 +98,10 @@ body {
 
 /*------------- ventana texto -------------*/
 #icon {
+  display: inline;
   position: relative;
-  top: -27px;
-  padding: 0;
+  top: -30px;
+  padding: 5px;
   margin: 0;
   font-size: large;
 }
@@ -229,10 +230,11 @@ body {
   border-top: 30px solid #cb9c3f;
   box-shadow: inset 0 0 5px #cb9c3f, 0 0 10px #cb9c3f;
   padding-bottom: 5px;
+  padding: 0;
   margin: 0;
   margin-left: 100px;
   top: 250px;
-  font-size: x-large;
+  font-size: large;
 }
 
 #ventanaT {
@@ -340,6 +342,7 @@ a:hover {
 
 #footer {
   background-color: #000;
+  width: 100%;
 }
 
 #contacto {
@@ -437,12 +440,12 @@ option:hover {
   background-color: #00c8ff;
 }
 
-#boton{
+#boton {
   display: none;
 }
 
 @media (max-width: 420px) {
-  body{
+  body {
     width: 100;
     height: 100;
   }
@@ -451,11 +454,16 @@ option:hover {
     width: 100%;
     height: 100%;
     font-size: 25px;
+    
   }
-  #header li{
-    display:block;
+  .menu{
+    margin: 0;
+    padding-top: 30%;
   }
-  #boton{
+  #header li {
+    display: block;
+  }
+  #boton {
     border: 0px;
     display: block;
     left: 45%;
@@ -468,12 +476,12 @@ option:hover {
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    box-shadow: inset 0 0 5px #2b70f0, 0 0 10px #2b70f0
+    box-shadow: inset 0 0 5px #2b70f0, 0 0 10px #2b70f0;
   }
-  .yo{
+  .yo {
     font-size: 35px;
   }
-  #main{
+  #main {
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -513,14 +521,14 @@ option:hover {
     display: none;
   }
   /* home */
-  #home{
+  #home {
     padding: 10px;
     margin: 0 auto;
   }
-  #cajita{
+  #cajita {
     display: none;
   }
-  #caja{
+  #caja {
     width: 100%;
     height: auto;
     margin: 10 auto;
@@ -539,14 +547,14 @@ option:hover {
     top: 0;
     left: 0;
   }
-  #ventana{
+  #ventana {
     display: none;
   }
-  h2{
+  h2 {
     font-size: 15px;
   }
   /* sobre mi */
-  #sobreMi{
+  #sobreMi {
     padding: 10px;
   }
   #ventanaH {
@@ -564,7 +572,6 @@ option:hover {
     font-size: 12px;
     top: 0;
     padding: 0px;
-    
   }
   #ventanaA {
     width: 100%;
@@ -576,7 +583,7 @@ option:hover {
   }
 
   /* educacion */
-  #educacion{
+  #educacion {
     padding: 10px;
     margin: 0 auto;
   }
@@ -594,12 +601,12 @@ option:hover {
     top: 0;
     font-size: 12px;
   }
-  li{
-    display:inline;
+  li {
+    display: inline;
   }
 
   /* proyectos */
-  #proyectos{
+  #proyectos {
     padding: 10px;
     margin: 0 auto;
   }
@@ -618,16 +625,16 @@ option:hover {
     font-size: 14px;
   }
   /* footer */
-  #footer{
+  #footer {
     margin: 0 auto;
     width: 100%;
   }
-  #contacto li{
+  #contacto li {
     display: block;
   }
   #contacto {
     width: auto;
-    top:15%;
+    top: 15%;
     padding: 0;
     font-size: 20px;
   }
