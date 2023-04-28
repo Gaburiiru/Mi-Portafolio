@@ -9,6 +9,7 @@ const iconCerrar = document.querySelector("#icon-cerrar");
 const musica = document.querySelector("#musica");
 const boton = document.querySelector("#boton");
 var header = document.querySelector("#header");
+var ancho = screen.width;
 
 boton.addEventListener("click", () => {
   header.style.display = header.style.display === "block" ? "none" : "block";
@@ -17,10 +18,17 @@ boton.addEventListener("click", () => {
   }else{
     boton.textContent = '🏠'
   }
+  return
 });
 
+//hay que resfrecar la pagina cada vez que se cambia la resolucion para que el header funcione bien.
 header.addEventListener("click", () => {
-  header.style.display = header.style.display === "block" ? "none" : "block";
+  if (ancho > 420){
+    header.style.display === "block";
+  }else{
+    header.style.display = header.style.display === "block" ? "none" : "block";
+  }
+  return
 });
 
 ventana.addEventListener("mouseover", (e) => {

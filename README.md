@@ -1,3 +1,3 @@
-# Proyectos-JS, Este proyecto es un rejunte de todos los proyectos que tengo de js con algun que otro framework o biblioteca.
+# Hola este es mi portafolio por lo que vas a encontrar diversos proyectos que fui haciendo y que voy a ir agregando a futuro, espero que sea de tu agrado :D.
 # dejo link para que puedan ver el proyecto:
 https://proyectos-javascripts.netlify.app/
