@@ -27,6 +27,7 @@ header.addEventListener("click", () => {
     header.style.display === "block";
   }else{
     header.style.display = header.style.display === "block" ? "none" : "block";
+    boton.textContent = '🏠'
   }
   return
 });
