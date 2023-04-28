@@ -11,14 +11,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="src/css/estilo.css" />
   </head>
   <body>
     <header id="header" class="text-center">
       <div class="menu">
-        <a href="#home"
-          ><img class="w-50" src="img/yo.jpg" style="border-radius: 200px"
-        /></a>
+        <a href="#home">
+          <img class="w-50" src="src/img/yo.jpg" style="border-radius: 200px; border: 4px solid #00c8ff99"/>
+        </a>
         <b class="yo">Gabriel Ricardes</b>
         <nav>
           <ul>
@@ -31,10 +31,27 @@
       </div>
     </header>
     <main id="main">
+      <button id="boton">🏠</button>
+      <img src="src/img/sol.gif" id="sol">
+      <img src="src/img/gato.gif" id="gato">
+      <img src="src/img/estatua.gif" id="estatua">
+      <img src="src/img/columna.gif" id="columna">
+      <img src="src/img/baño.gif" id="baño">
+      <img src="src/img/esque2.gif" id="esque2">
+      <div id="musica">
+        <div id="icon-cerrar">❌</div>
+        <div id="reproductorBox" class="text-center">
+          <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+            <option value="src/music/Space Echo.mp3">Space Echo</option>
+            <option value="src/music/Volts Theme.mp3">Volts Theme</option>
+            <option value="src/music/Audiotool Day 2016.mp3">Audiotool Day</option>
+          </select>
+        </div>
+      </div>
       <section id="home">
         <div id="cajita" class="mx-auto"></div>
         <div id="caja" class="text-center mx-auto">
-          <p class="glitch">
+          <p class="glitch text-center">
             <span aria-hidden="true">Bienvenidos A Mí Portafolio </span>
             Bienvenidos A Mí Portafolio
             <span aria-hidden="true"> Bienvenidos A Mí Portafolio </span>
@@ -52,7 +69,7 @@
         <div id="ventanaH" class="parpadea">
           <div id="icon">🔴🟡🟢</div>
           <h2 class="text-center">Hola, soy Gabo. Encantado de conocerte</h2>
-          <p class="text-center m-4">
+          <p class="text-center">
             Desde que comencé mi viaje como desarrollador web independiente hace
             más de 1 año, he estado aprendiendo nuevas tecnologías, lenguajes,
             técnicas y metodologías de trabajo. me gustaría realizar trabajos
@@ -66,33 +83,33 @@
         <div id="ventanaI" class="parpadea">
           <div id="icon">🔴🟡🟢</div>
           <h2 class="text-center">Información sobre mí</h2>
-          <p class="text-center m-4">
-            😎 Tengo 20 años<br />
+          <p class="text-center">
+            🗿 Tengo 20 años<br />
             🎧 Me gusta la música<br />
             🎨 Me gusta el arte<br />
             🎮 Me gustan los video juegos<br />
-            💻 Me gusta la tecnología
+            💻 Me gusta la tecnología y la Programación
           </p>
         </div>
         <div id="ventanaA" class="parpadea">
           <div id="icon">🔴🟡🟢</div>
           <h2 class="text-center">Actualmente</h2>
-          <p class="text-center m-4">
+          <p class="text-center p-2">
             Estoy estudiando en la universidad y aprendiendo de forma
             independiente el manejo de las Apis utilizando:
           </p>
           <ul class="mx-5">
             <li><a href="https://es.wikipedia.org/wiki/JavaScript">
-              <img src="img/js-icon.png" style="width: 27px" /> JavaScript</a>
+              <img src="src/img/js-icon.png" style="width: 27px;" /> JavaScript</a>
             </li>
             <li><a href="https://nodejs.org/es">
-              <img src="img/node-icon.png" style="width: 32px" /> Node.js</a>
+              <img src="src/img/node-icon.png" style="width: 32px" /> Node.js</a>
             </li>
             <li><a href="https://es.react.dev/">
-              <img src="img/react-icon.png" style="width: 30px" /> React.js</a>
+              <img src="src/img/react-icon.png" style="width: 30px" /> React.js</a>
             </li>
             <li><a href="https://es.redux.js.org/">
-              <img src="img/redux-icon.png" style="width: 27px" /> Redux</a>
+              <img src="src/img/redux-icon.png" style="width: 27px" /> Redux</a>
           </li>
           </ul>  
         </div>
@@ -101,9 +118,9 @@
         <div id="titulo1" class="mx-auto m-4">
           <div id="icon">🔴🟡🟢</div>
           <h1 class="text-center">
-            Proyectos con <b>JavaScript <img src="img/js-icon.png" style="width: 40px;"></b>
+            Proyectos con <b>JavaScript <img src="src/img/js-icon.png" style="width: 40px;"></b>
           </h1>
-          <div id="carousel1" class="carousel slide mt-3 shadow-lg">
+          <div id="carousel1" class="carousel slide mt-3 shadow-lg p-2">
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -148,11 +165,11 @@
               <div class="carousel-item active">
                 <a href="https://crud-js-local.netlify.app/">
                   <img
-                    src="img/cargarEmpleados.png"
+                    src="src/img/cargarEmpleados.png"
                     class="d-block w-100"
                     alt="..."
                   />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>Listar empleados (CRUD)</h5>
                     <p>
                       Ingresas nombre y puesto de trabajo del empleado, el mismo
@@ -164,11 +181,11 @@
               <div class="carousel-item">
                 <a href="https://carrito-de-fruta.netlify.app/">
                   <img
-                    src="img/carritoDeFruta.png"
+                    src="src/img/carritoDeFruta.png"
                     class="d-block w-100"
                     alt="..."
                   />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>Carrito de frutas (CRUD)</h5>
                     <p>
                       Seleccionas la fruta que queres y se te guarda a tu carrito
@@ -179,8 +196,8 @@
               </div>
               <div class="carousel-item">
                 <a href="https://selector-de-color.netlify.app/">
-                  <img src="img/colorPiker.png" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <img src="src/img/colorPiker.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>Selector de color</h5>
                     <p>
                       Selecionas el color que queres y te lo genera a formato
@@ -192,11 +209,11 @@
               <div class="carousel-item">
                 <a href="https://api-fetch-rick-and-morty.netlify.app/">
                   <img
-                    src="img/RickAndMorty.png"
+                    src="src/img/RickAndMorty.png"
                     class="d-block w-100"
                     alt="..."
                   />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>API Rick And Morty</h5>
                     <p>
                       Extrae de la api de rick and morty el json, para visualizar
@@ -208,11 +225,11 @@
               <div class="carousel-item">
                 <a href="https://alta-alumnos-profesor.netlify.app/">
                   <img
-                    src="img/alta-profesores-alumnos.png"
+                    src="src/img/alta-profesores-alumnos.png"
                     class="d-block w-100"
                     alt="..."
                   />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>Alta alumnos y profesor</h5>
                     <p>
                       Se puede agregar alumnos y profesores para modificar su
@@ -224,11 +241,11 @@
               <div class="carousel-item">
                 <a href="https://agregar-tareas-local-storage.netlify.app/">
                   <img
-                    src="img/agregar-tareas.png"
+                    src="src/img/agregar-tareas.png"
                     class="d-block w-100"
                     alt="..."
                   />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>Agregar tareas</h5>
                     <p>
                       Se puede agregar tareas y eliminarlas, esta hecho con
@@ -262,9 +279,9 @@
         <div id="titulo2" class="mx-auto">
           <div id="icon">🔴🟡🟢</div>
           <h1 class="text-center">
-            Proyectos con <b>JavaScript <img src="img/js-icon.png" style="width: 40px;"></b> y <b>REACT <img src="img/react-icon.png" style="width: 40px;"></b>
+            Proyectos con <b>JavaScript <img src="src/img/js-icon.png" style="width: 40px;"></b> y <b>REACT <img src="src/img/react-icon.png" style="width: 40px;"></b>
           </h1>
-          <div id="carousel2" class="carousel slide mt-3 shadow-lg">
+          <div id="carousel2" class="carousel slide mt-3 shadow-lg p-2">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -285,11 +302,11 @@
             <div class="carousel-item active">
               <a href="https://agregar-tareas-con-react.netlify.app/">
                 <img
-                  src="img/agregar-tareas-com-react.png"
+                  src="src/img/agregar-tareas-com-react.png"
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                   <h5>Agregar tareas con REACT</h5>
                   <p>
                     Ingresas nombre de la tarea y la descripcion de está, el
@@ -300,8 +317,8 @@
             </div>
             <!-- <div class="carousel-item">
                 <a href="https://agregar-tareas-local-storage.netlify.app/">
-                  <img src="img/agregar-tareas.png" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
+                  <img src="src/img/agregar-tareas.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.371); border-radius: 15px;">
                     <h5>Agregar tareas</h5>
                     <p>
                       Se puede agregar tareas y eliminarlas, esta hecho con
@@ -360,82 +377,82 @@
         </div>
         <div id="ventanaT" class="parpadea">
           <div id="icon">🔴🟡🟢</div>
-          <h2 class="text-center">Tecnologias</h2>
+          <h2 class="text-center">Tecnologías</h2>
           <ul class="mx-5">
             <p><b>Para realizar paginas web utilizo:</b></p>
             <li>
               <a href="https://es.wikipedia.org/wiki/JavaScript"
-                ><img src="img/js-icon.png" style="width: 27px" /> JavaScript</a
+                ><img src="src/img/js-icon.png" style="width: 27px" /> JavaScript</a
               >
             </li>
             <li>
               <a href="https://es.wikipedia.org/wiki/CSS"
-                ><img src="img/css-icon.png" style="width: 27px" /> CSS
+                ><img src="src/img/css-icon.png" style="width: 27px" /> CSS
               </a>
             </li>
             <li>
               <a href="https://es.wikipedia.org/wiki/HTML"
-                ><img src="img/html-icon.png" style="width: 27px" /> HTML
+                ><img src="src/img/html-icon.png" style="width: 27px" /> HTML
               </a>
             </li>
             <li>
               <a href="https://es.wikipedia.org/wiki/SQL"
-                ><img src="img/sql-icon.png" style="width: 27px" /> SQL
+                ><img src="src/img/sql-icon.png" style="width: 27px" /> SQL
               </a>
             </li>
             <li>
               <a href="https://es.react.dev/"
-                ><img src="img/react-icon.png" style="width: 27px" /> REACT
+                ><img src="src/img/react-icon.png" style="width: 27px" /> REACT
               </a>
             </li>
             <li>
               <a href="https://getbootstrap.com/"
-                ><img src="img/bootstrap-icon.png" style="width: 27px" />
+                ><img src="src/img/bootstrap-icon.png" style="width: 27px" />
                 Bootstrap
               </a>
             </li>
             <p><b>Tambien poseo conocimientos en:</b></p>
             <li>
               <a href="https://www.microsoft.com/es-es/sql-server/sql-server-downloads"
-                ><img src="img/sqlServer-icon.png" style="width: 27px" /> SQL
+                ><img src="src/img/sqlServer-icon.png" style="width: 27px" /> SQL
                 server
               </a>
             </li>
             <li>
               <a href="https://www.python.org/"
-                ><img src="img/python-icon.png" style="width: 27px" /> Python
+                ><img src="src/img/python-icon.png" style="width: 27px" /> Python
               </a>
             </li>
             <li>
               <a href="https://www.java.com/es/"
-                ><img src="img/java-icon.png" style="width: 27px" /> Java
+                ><img src="src/img/java-icon.png" style="width: 27px" /> Java
               </a>
             </li>
             <li>
               <a href="https://kotlinlang.org/"
-                ><img src="img/kotlin-icon.jpg" style="width: 27px" /> Kotlin
+                ><img src="src/img/kotlin-icon.jpg" style="width: 27px" /> Kotlin
               </a>
             </li>
             <li>
               <a href="https://www.php.net/manual/es/intro-whatis.php"
-                ><img src="img/php-icon.png" style="width: 27px" /> PHP
+                ><img src="src/img/php-icon.png" style="width: 27px" /> PHP
               </a>
             </li>
             <li>
               <a href="https://firebase.google.com/?hl=es"
-                ><img src="img/firebase-icon.png" style="width: 27px" />
+                ><img src="src/img/firebase-icon.png" style="width: 27px" />
                 Firebase
               </a>
             </li>
             <li>
               <a href="https://www.adobe.com/ar/products/photoshop.html"
-                ><img src="img/photoshop-icon.png" style="width: 27px" />
+                ><img src="src/img/photoshop-icon.png" style="width: 27px" />
                 Photoshop
               </a>
             </li>
             <li>
               <a href="https://es.wikipedia.org/wiki/Bash"
-                ><img src="img/bash-icon.png" style="width: 27px" /> Scripts
+                ><img src="src/img/bash-icon.png" style="width: 27px" /> Scripts
                 Bash
               </a>
             </li>
@@ -446,7 +463,7 @@
       </section>
       <section id="footer" class="p-5">
         <div id="contacto" class="mx-auto">
-          <h1>Contactame</h1>
+          <h1>Contactame:</h1>
           <ul>
             <li>
               <b>🧠 Github:</b><a href="https://github.com/Gaburiiru"> Gaburiiru</a>
@@ -460,9 +477,10 @@
           </ul>
           <h1>Este sitio esta desarrollado con:</h1>
           <ul>
-            <li><img src="img/html-icon.png" style="width: 27px;"> HTML</li>
-            <li><img src="img/css-icon.png" style="width: 27px;"> CSS</li>
-            <li><img src="img/bootstrap-icon.png" style="width: 27px;"> Bootstrap</li>
+            <li><img src="src/img/html-icon.png" style="width: 40px;"> HTML</li>
+            <li><img src="src/img/css-icon.png" style="width: 40px;"> CSS</li>
+            <li><img src="src/img/bootstrap-icon.png" style="width: 35px;"> Bootstrap</li>
+            <li><img src="src/img/js-icon.png" style="width: 30px;"> JavaScript</li>
           </ul>
         </div>
       </section>
@@ -472,5 +490,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="src/js/app.js" ></script>
   </body>
 </html>
