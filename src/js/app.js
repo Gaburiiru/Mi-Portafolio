@@ -99,7 +99,7 @@ function cargarReproductor() {
   nuevo_audio = document.createElement("audio");
   nuevo_audio.setAttribute("id", "reproductor");
   nuevo_audio.setAttribute("controls", "controls");
-  // nuevo_audio.setAttribute("autoplay", "autoplay");
+  nuevo_audio.setAttribute("autoplay", "autoplay");
   source = document.createElement("source");
   source.setAttribute("src", value);
   source.setAttribute("type", "audio/mpeg");
