@@ -23,7 +23,7 @@ boton.addEventListener("click", () => {
 
 //hay que resfrecar la pagina cada vez que se cambia la resolucion para que el header funcione bien.
 header.addEventListener("click", () => {
-  if (ancho > 420){
+  if (ancho > 500){
     header.style.display === "block";
   }else{
     header.style.display = header.style.display === "block" ? "none" : "block";

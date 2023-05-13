@@ -444,7 +444,7 @@ option:hover {
   display: none;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   body {
     width: 100;
     height: 100;
